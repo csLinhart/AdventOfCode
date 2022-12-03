@@ -13,7 +13,7 @@ end
 
 function D03P2(input)
     sum = 0
-    for i =1:3:length(input)
+    for i = 1:3:length(input)
         first = only.(split(input[i], ""))
         second = only.(split(input[i+1], ""))
         third = only.(split(input[i+2], ""))
