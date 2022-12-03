@@ -1,6 +1,6 @@
 input = readlines("D02.txt")
 
-function D01(input)
+function D02(input)
     score = [0, 0]
     for e in input
         if (e[1] == 'A' && e[3] == 'X')
@@ -26,4 +26,4 @@ function D01(input)
     score
 end
 
-println(D01(input))
+println(D02(input))
