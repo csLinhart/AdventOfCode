@@ -10,8 +10,8 @@ end
 function D01P2(input)
     cm = countmap(input[:, 2])
     s = 0
-    for i = 1:length(input[:, 1])
-        s += get(cm, input[:, 1][i], 0) * input[:, 1][i]
+    for l in input[:, 1]
+        s += get(cm, l, 0) * l
     end
     s
 end
