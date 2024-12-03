@@ -1,8 +1,6 @@
 import java.io.File
 
 fun isSafe(levels: List<Int>): Boolean {
-    if (levels.size < 2) return true
-
     val isIncreasing = levels.zipWithNext().all { (a, b) -> b > a && b - a in 1..3 }
     val isDecreasing = levels.zipWithNext().all { (a, b) -> b < a && a - b in 1..3 }
 
