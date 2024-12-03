@@ -1,5 +1,3 @@
-package y2023
-
 import kotlin.math.ceil
 import kotlin.math.floor
 import kotlin.math.pow
@@ -23,8 +21,5 @@ fun d06p2(time: Double, distance: Long): Int {
     return (s2 - s1 + 1).toInt()
 }
 
-
-fun main() {
-    println(d06p1(intArrayOf(49, 87, 78, 95), intArrayOf(356, 1378, 1502, 1882)))
-    println(d06p2(49877895.toDouble(), "356137815021882".toLong()))
-}
+println(d06p1(intArrayOf(49, 87, 78, 95), intArrayOf(356, 1378, 1502, 1882)))
+println(d06p2(49877895.toDouble(), "356137815021882".toLong()))
