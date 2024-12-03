@@ -1,5 +1,3 @@
-package y2023
-
 import java.io.File
 
 fun d02(input: List<String>): Pair<Int, Int> {
@@ -39,8 +37,5 @@ fun d02(input: List<String>): Pair<Int, Int> {
     return Pair(result1, result2)
 }
 
-
-fun main() {
-    val input = File("inputs/2023/D02.txt").readLines()
-    println(d02(input))
-}
+val input = File("D02.txt").readLines()
+println(d02(input))
